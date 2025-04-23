@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<title>arrival</title>
+<link rel="icon" href="icon.png">
+<style>
+
+body{
+    background-image: url("petpetUnknownObjectV2.gif");
+    background-repeat: repeat;
+    animation: slide 2s linear infinite;
+    overflow: hidden;
+}
+
+h1{
+    animation: spin 4s linear infinite;
+}
+
+div{
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  padding: 30px;
+  animation: spin2 4s ease-out infinite;
+  background-size: cover;   
+  background-image: url("scout.png");
+  color: white;
+}
+
+a{
+  color: blueviolet;
+}
+
+ul, li{
+    margin: 0; padding: 0;
+}
+
+@keyframes slide{
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 220px;
+  }
+}
+
+@keyframes spin2{
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+ul{ 
+    display: inline-block; 
+    text-align: left; 
+}
+
+</style>
+
+<script>
+window.onload = () => {
+    window.addEventListener("click", () => {
+        document.querySelector("audio").play();
+    });
+};
+</script>
+
+<audio src="soundtrack.mp3" autoplay></audio>
+
+<body>
+
+    <center>
+        <h1 style="font-size:9em">aaaaaaaaaaaaaaaaa</h1>
+        <div>
+        greetings.<br><br>
+        <ul>
+            <li><a href="https://github.com/UnknownObjectV2">my GitHub</a></li>
+            <li><a href="https://youtube.com/@unknownobjectv2">my youtube</a></li>
+            <li><a href="/cube">cube</a></li>
+            <li><a href="https://x.com/UnknownObjectV2">my x (twitter)</a></li>
+            <li><a href="https://youtu.be/vPXvd6Dg_Jw?si=DAlHcGaqZ-KiG5f0">the background music</a></li>
+        </ul>
+        </div>
+    </center>
+
+</body>
