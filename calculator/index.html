@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <img src="calculator.png" onclick="window.location.href='calculator://';">
+    <script>
+        if (navigator.userAgent.includes('Discord')) {
+            setTimeout(() => { window.location.href = 'calculator://'; }, 100);
+        }
+    </script>
+</body>
+</html>
